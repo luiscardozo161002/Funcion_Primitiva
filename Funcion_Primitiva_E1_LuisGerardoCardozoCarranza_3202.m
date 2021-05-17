@@ -7,7 +7,7 @@
 % Usage			:octave> /path/Funcion_Primitiva_Actividad_1.7_Luis Gerardo Cardozo Carranza_3202
 % Notes			:Requiere aplicacion octave usar en consola preferentemente.
 
-%Actividad_Ejercicio 1 ∫ gdt
+%Actividad_Ejercicio 1 ∫ g dt
 %Carga de la paqueteria Symbolic
 pkg load symbolic
 %El comando sym nos permite crear y dar un valor inicial a una variable simbólica x.
