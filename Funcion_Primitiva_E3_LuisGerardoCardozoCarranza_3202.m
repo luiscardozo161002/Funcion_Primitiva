@@ -17,4 +17,4 @@ int(5)
 %La respuesta de la operacion no ha sido asignado a ninguna variable y por defecto es ans
 ans = (sym)
   
-  %AVISO: Syntax ERROR!
+%AVISO: Syntax ERROR!
