@@ -8,10 +8,12 @@
 % Notes			:Requiere aplicacion octave usar en consola preferentemente.
 
 %Actividad_Ejercicio 1 ∫ gdt
-%Inicio de la paqueteria Symbolic
->> pkg load symbolic
->> syms x;
->> S = g(x) ∗ dt;
->> int(S)
-ans =
-2 ∗ sin(x) − 3 ∗ x ∧ 2  
+%Carga de la paqueteria Symbolic
+pkg load symbolic
+%El comando sym nos permite crear y dar un valor inicial a una variable simbólica x.
+syms t;
+%La integracion se realizara respecto a la variable simbolica por defecto (x). 
+int(t)
+%La respuesta de la operacion no ha sido asignado a ninguna variable y por defecto es ans
+ans = (sym)
+
