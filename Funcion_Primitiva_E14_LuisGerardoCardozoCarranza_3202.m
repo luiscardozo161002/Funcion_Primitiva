@@ -13,6 +13,6 @@ pkg load symbolic
 %El comando sym nos permite crear y dar un valor inicial a una variable simbólica.
 syms x;
 %La integracion se realizara respecto a la variable simbolica por defecto. 
-int 2(x.^7) 
+int (2*x.^7) 
 %La respuesta de la operacion no ha sido asignado a ninguna variable y por defecto es ans
 ans = (sym)
