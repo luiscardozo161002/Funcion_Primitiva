@@ -44,7 +44,7 @@ hold on
 plot(x2,y2);
 
 %Asigna un nombre a la grafica 
-title("Actividad Ejercicio 19 ");
+title("Ejercicio 1 Integral Definida");
 
 %Ajusta la grafica a los datos.
 axis tight
