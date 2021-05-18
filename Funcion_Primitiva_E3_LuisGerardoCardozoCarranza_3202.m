@@ -13,8 +13,6 @@ pkg load symbolic
 %El comando sym nos permite crear y dar un valor inicial a una variable simbólica x.
 syms 5;
 %La integracion se realizara respecto a la variable simbolica por defecto (x). 
-int(5)
+int (5,x)
 %La respuesta de la operacion no ha sido asignado a ninguna variable y por defecto es ans
 ans = (sym)
-  
-%AVISO: Syntax ERROR!
