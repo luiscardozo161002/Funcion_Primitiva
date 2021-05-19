@@ -11,43 +11,25 @@
 %                      -1
 %Limpia la pantalla y las variables.
 clc, clear
-f=@(x,y) 3*x;
-resultado=integral(f, -1,4);
+%Definimos las variables 
+f=@(x,y) (3*x);
+%Declaramos la variable para la funcion
+resultado=integral(f,-1,4);
+%imprimimos el valor de la integral definida
 fprintf('El valor de la integral es:%2.1f\n',resultado)
-
-%Define los intervalos y el numero de rectangulos.
-a = -1;
-b =  4;
-n = 100;
-
-%Determina la longitud de la base o el incremento de x.
-base = (b-a)/n;
-
-%Definicion de la funcion.
-x =a:base:(b-base);
-
-%Y esta representada por la variable altura
-altura=(3*x);
-
-%Establece   la    linea   que   forma  la funcion
-x2 = linspace(1,4,100);
-y2 = (3*x);
-
-%Inicio del  intervalo, fin del intervalo, numero de rectangulos.
-xa = linspace(1,4,100);
-yab =(3*x);
-
-%Dibuja una  grafica de barras una a lado de otra sin espacios
-g = bar(xa,yab,'histc');
-
+%De nuevo tomamos los valores para definir el rango de la grafica
+x=[1:0.1:4];
+%Definimos la funcion
+y=3*x;
+%Imprimimos la funcion en los ejes x,y
+plot(x,y)
+%Muestra las líneas de cuadrícula principales para los ejes 
+grid on
 %Permite continuar  graficando  despues de que ya exista un grafica trazada
 hold on
-
 %Grafica la funcion
-plot(x2,y2);
-
-%Asigna un nombre a la grafica 
+plot(x,y)
+%distribuye las barras a lo largo del eje x
+bar(x,y)
+%Titulo de la funcion
 title("Ejercicio 2 Integral Definida");
-
-%Ajusta la grafica a los datos.
-axis tight
