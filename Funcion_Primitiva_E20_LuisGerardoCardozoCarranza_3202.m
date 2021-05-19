@@ -7,7 +7,7 @@
 % Usage			:octave> /path/Funcion_Primitiva_Actividad_1.7_Luis Gerardo Cardozo Carranza_3202
 % Notes			:Requiere aplicacion octave usar en consola preferentemente.
 %                       4
-%Actividad_Ejercicio 20 ∫ 3 dx
+%Actividad_Ejercicio 2 ∫ 3 dx
 %                      -1
 %Limpia la pantalla y las variables.
 clc, clear
