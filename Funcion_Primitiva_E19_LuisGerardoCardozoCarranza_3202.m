@@ -6,48 +6,30 @@
 % sion		        :1
 % Usage			:octave> /path/Funcion_Primitiva_Actividad_1.7_Luis Gerardo Cardozo Carranza_3202
 % Notes			:Requiere aplicacion octave usar en consola preferentemente.
-%                       4
-%Actividad_Ejercicio 19 ∫ x dx
-%                       1
+%                      4
+%Actividad_Ejercicio 1 ∫ x dx
+%                      4
 %Limpia la pantalla y las variables.
 clc, clear
-f=@(x,y)x;
+%Definimos las variables 
+f=@(x,y) x;
+%Declaramos la variable para la funcion
 resultado=integral(f, 1,4);
+%Imprimimos el valor de la integral definida
 fprintf('El valor de la integral es:%2.1f\n',resultado)
-
-%Define los intervalos y el numero de rectangulos.
-a = 1;
-b = 4;
-n = 100;
-
-%Determina la longitud de la base o el incremento de x.
-base = (b-a)/n;
-
-%Definicion de la funcion.
-x =a:base:(b-base);
-
-%Y esta representada por la variable altura
-altura=(x);
-
-%Establece   la    linea   que   forma  la funcion
-x2 = linspace(1,4,100);
-y2 = (x);
-
-%Inicio del  intervalo, fin del intervalo, numero de rectangulos.
-xa = linspace(1,4,100);
-yab =(x);
-
-%Dibuja una  grafica de barras una a lado de otra sin espacios
-g = bar(xa,yab,'histc');
-
+%De nuevo tomamos los valores para definir el rango de la grafica
+x=[1:0.1:4];
+%Definimos la funcion
+y=(x);
+%Imprimimos la funcion en los ejes x,y
+plot(x,y)
+%Muestra las líneas de cuadrícula principales para los ejes 
+grid on
 %Permite continuar  graficando  despues de que ya exista un grafica trazada
 hold on
-
 %Grafica la funcion
-plot(x2,y2);
-
-%Asigna un nombre a la grafica 
+plot(x,y)
+%distribuye las barras a lo largo del eje x
+bar(x,y)
+%Titulo de la funcion
 title("Ejercicio 1 Integral Definida");
-
-%Ajusta la grafica a los datos.
-axis tight
