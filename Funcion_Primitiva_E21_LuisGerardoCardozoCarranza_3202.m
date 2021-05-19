@@ -11,6 +11,9 @@
 %                      -4
 %Limpia la pantalla y las variables.
 clc, clear
+f=@(x,y)x;
+resultado=integral(f, -4,4);
+fprintf('El valor de la integral es:%2.1f\n',resultado)
 
 %Define los intervalos y el numero de rectangulos.
 a = -4;
@@ -24,15 +27,15 @@ base = (b-a)/n;
 x =a:base:(b-base);
 
 %Y esta representada por la variable altura
-altura= abs(x+2);
+altura=(x);
 
 %Establece   la    linea   que   forma  la funcion
 x2 = linspace(1,4,100);
-y2 = abs(x+2);
+y2 = (x);
 
 %Inicio del  intervalo, fin del intervalo, numero de rectangulos.
 xa = linspace(1,4,100);
-yab = abs(x+2);
+yab =(x);
 
 %Dibuja una  grafica de barras una a lado de otra sin espacios
 g = bar(xa,yab,'histc');
