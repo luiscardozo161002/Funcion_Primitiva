@@ -11,7 +11,7 @@
 %                      -1
 %Limpia la pantalla y las variables.
 clc, clear
-f=@(x,y)x;
+f=@(x,y) 3*x;
 resultado=integral(f, -1,4);
 fprintf('El valor de la integral es:%2.1f\n',resultado)
 
@@ -27,15 +27,15 @@ base = (b-a)/n;
 x =a:base:(b-base);
 
 %Y esta representada por la variable altura
-altura=(x);
+altura=(3*x);
 
 %Establece   la    linea   que   forma  la funcion
 x2 = linspace(1,4,100);
-y2 = (x);
+y2 = (3*x);
 
 %Inicio del  intervalo, fin del intervalo, numero de rectangulos.
 xa = linspace(1,4,100);
-yab =(x);
+yab =(3*x);
 
 %Dibuja una  grafica de barras una a lado de otra sin espacios
 g = bar(xa,yab,'histc');
