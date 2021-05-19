@@ -9,45 +9,44 @@
 %                       4
 %Actividad_Ejercicio 21 ∫ x dx
 %                      -4
-%Limpia la pantalla y las variables.
+%limpia la pantalla y las variables.
 clc, clear
-f=@(x,y)x;
-resultado=integral(f, -4,4);
+%Definimos la funcion
+f=@(x,y)abs(x+2);
+%Declaramos los intervalos
+resultado=integral(f, -4,2);
+%Imprimos en pantalla el resultado de la Integral
 fprintf('El valor de la integral es:%2.1f\n',resultado)
-
-%Define los intervalos y el numero de rectangulos.
-a = -4;
-b =  4;
+%define los intervalos y el numero de rectangulos.
+a = 2;
+b = -4;
 n = 100;
-
 %Determina la longitud de la base o el incremento de x.
 base = (b-a)/n;
-
 %Definicion de la funcion.
 x =a:base:(b-base);
-
-%Y esta representada por la variable altura
-altura=(x);
-
-%Establece   la    linea   que   forma  la funcion
-x2 = linspace(1,4,100);
-y2 = (x);
-
+%Representa la variable altura
+altura=abs(x+2);
+%Calcula el valor de cada uno de los rectangulos.
+area = base*altura;
+%Estable    la    linea   que   forma  la funcion
+x2 = linspace(-4,2,100);
+y2 = abs(x+2);
 %Inicio del  intervalo, fin del intervalo, numero de rectangulos.
-xa = linspace(1,4,100);
-yab =(x);
+xa = linspace(-4,2,100);
+yab =abs(x+2);
 
-%Dibuja una  grafica de barras una a lado de otra sin espacios
+%Dibuja una  grafica de barras sin espacios
 g = bar(xa,yab,'histc');
 
-%Permite continuar  graficando  despues de que ya exista un grafica trazada
+%Permite continuar graficando despues de la grafica
 hold on
 
 %Grafica la funcion
 plot(x2,y2);
 
 %Asigna un nombre a la grafica 
-title("Ejercicio 3 Integral Definida");
+title("Ejericicio 3 Integrales Definidas");
 
 %Ajusta la grafica a los datos.
 axis tight
