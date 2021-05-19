@@ -11,6 +11,9 @@
 %                       1
 %Limpia la pantalla y las variables.
 clc, clear
+f=@(x,y)x;
+resultado=integral(f, 1,4);
+fprintf('El valor de la integral es:%2.1f\n',resultado)
 
 %Define los intervalos y el numero de rectangulos.
 a = 1;
